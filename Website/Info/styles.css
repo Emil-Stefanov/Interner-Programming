@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #daf5d3; 
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #daf5d3; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+    color: #000;
+    font-size: 40px; 
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px; 
+}
+
+.flex-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin-top: 30px; 
+}
+
+.favorite-foods {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #adfccb;
+    border-radius: 5px; 
+    background-color: #daffdf;
+    flex: 1; 
+    margin-right: 20px;
+}
+
+h3 {
+    color: #000;
+    margin: 0; 
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.image-container {
+    flex: 1; 
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #adfccb;
+    border-radius: 5px; 
+}
+
+.link-container {
+    margin-top: 20px;
+}
+
+a {
+    color: #46b929; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #46b929; 
+}
+
+h4 {
+    color: #000; 
+    margin-top: 10px;
+}
