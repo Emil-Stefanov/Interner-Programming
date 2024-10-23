@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    padding-top: 10px;
+    width: 100%;
+    justify-self: center; 
+    align-items: center;
+    
+}
+
+header {
+    background-color: rgba(7, 163, 207, 0.938);
+    color: rgba(255, 255, 255, 0.874);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: rgba(7, 163, 207, 0.938);
+    color: rgba(255, 255, 255, 0.874);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(2, 50, 81);
+    text-align: left;
+    margin-left: 30px;
+}
+h4 {
+    padding: 10px;
+}
+
+table {
+    background-color: rgba(7, 163, 207, 0.938);
+    justify-self: center;
+    align-items: center;
+    font-size: large; 
+}
+
+.content {
+    background-color: rgba(7, 163, 207, 0.938);
+    color: rgba(255, 255, 255, 0.874);
+    margin-bottom: 15px;
+    justify-self: center;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+}
+
+.html-tag {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    color: rgba(7, 163, 207, 0.938);
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width:auto; 
+    height: 25px;
+    margin-right: 15px;
+}
+
+.tag-description {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    justify-items: right; 
+    text-align: left;
+}
+
+
+
