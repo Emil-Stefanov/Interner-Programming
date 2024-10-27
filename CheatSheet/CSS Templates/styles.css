@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #8decff;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #07a3cfef; 
+    color: rgba(255, 255, 255, 0.874); 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 10px;
+    width: 100%; 
+    text-align: center; 
+}
+
+h2 {
+    color: rgb(2, 50, 81);
+}
+
+nav {
+    padding: 10px; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+
+.container {
+    background-color: #07a3cfef; 
+    color: rgba(255, 255, 255, 0.874); 
+    border-radius: 15px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.102); 
+    transition: transform 0.5s;
+}
+.container:hover{
+    transform: scale(1.03);
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 10px;
+    color: rgb(2, 50, 81);
+}
+
+.code {
+    background-color: #b0e9f6; 
+    color: rgb(2, 50, 81);
+    padding: 10px;
+    border-radius: 15px; 
+    margin-bottom: 10px;
+    font-family: monospace;
+    text-align: left;
+}
+
+.example-center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #023251;
+    border: 1px solid #023251;
+}
+
+.example-button{
+    background-color: transparent;
+    padding: 20px;
+}
+
+.round-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #69b2e2; 
+    border: none;
+    color: white;
+}
+
+.example-rounded-box {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #023251;
+    background-color: #69b2e2;
+    color: #023251; 
+}
+
+.example-shadow-box {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #69b2e2; 
+    color: #023251;
+}
+
+.example-progress-bar {
+    width: 100%; 
+    background-color: #ddd; 
+    height: 20px; 
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #023251;
+}
+
+.example-progress-bar .progress {
+    width: 70%;
+    height: 100%;
+    background-color:  #69b2e2;
+}
+
+.example-animated-gradient {
+    width: 100%;
+    height: 100px; 
+    background: linear-gradient(45deg, #0a036a, #5c34d4, #1e8beb); 
+    background-size: 300% 300%; 
+    animation: gradientAnimation 3s ease infinite; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; } 
+    50% { background-position: 100% 50%; } 
+    100% { background-position: 0% 50%; } 
+}
+
+.example-zoom-on-hover {
+    width: 100px;
+    height: 100px;
+    background-color: #69b2e2;
+    transition: transform 0.3s;
+    text-align: center; 
+    align-items: center;
+    display: flex; 
+    justify-content: center; 
+
+}
+
+.example-zoom-on-hover:hover {
+    transform: scale(1.1); 
+}
+
+.example-image-container {
+    align-items: center;
+    background-color: #69b2e2;
+    margin: 10px;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+
+.image-description {
+    padding: 10px;
+    text-align: center;
+    color: #023251;
+}
+
+.icon-list {
+    list-style: none;
+    background-color: #69b2e2;
+    padding: 10px;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 1.5em;
+    color: #023251;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    background-color: #69b2e2;
+    padding: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
+    color: #023251;
+}

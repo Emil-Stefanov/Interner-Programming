@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS templates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <h1> CSS Templates </h1>
+        <nav>
+            <a href="../HTML Cheatsheet/HTMLcheatsheet.html">HTML Cheatsheet</a> |
+            <a href="../CSS Cheatsheet/CSScheatsheet.html">CSS Cheatsheet</a>
+        </nav>
+    </header>
+    
+    <main>
+    <div class="container">
+        <div class="title"> Центриране на елемент </div>
+        <div class="code">
+            .center-item &#123;<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: center;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            &nbsp;&nbsp;height: 100px;<br>
+            &#125;
+        </div>
+        <div class="example-center-item"> Центриран текст </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Бутон с кръгла форма </div>
+        <div class="code">
+            .round-button &#123;<br>
+            &nbsp;&nbsp;width: 50px;<br>
+            &nbsp;&nbsp;height: 50px;<br>
+            &nbsp;&nbsp;border-radius: 50%;<br>
+            &nbsp;&nbsp;background-color: #69b2e2;<br>
+            &#125;
+        </div>
+        <div class="example-button">
+            <button class="round-button"> Go </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Сянка на контейнер </div>
+        <div class="code">
+            .shadow-box &#123;<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);<br>
+            &#125;
+        </div>
+        <div class="example-shadow-box"> Контейнер със сянка </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Контейнер със заоблени ъгли </div>
+        <div class="code">
+            .rounded-box &#123;<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;border-radius: 15px;<br>
+            &nbsp;&nbsp;background-color: #69b2e2;<br>
+            &#125;
+        </div>
+        <div class="example-rounded-box"> Съдържание в контейнер със заоблени ъгли </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Лента за прогрес </div>
+        <div class="code">
+            .progress-bar &#123;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;background-color: #ddd;<br>
+            &nbsp;&nbsp;height: 100%;<br>
+            &#125;<br><br>
+            .progress &#123;<br>
+            &nbsp;&nbsp;width: 70%;<br>
+            &nbsp;&nbsp;height: 100%;<br>
+            &nbsp;&nbsp;background-color: #69b2e2;<br>
+            &#125;
+        </div>
+        <div class="example-progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Ефект на уголемяване при hover </div>
+        <div class="code">
+            .zoom-on-hover &#123;<br>
+            &nbsp;&nbsp;transition: transform 0.3s;<br>
+            &#125;<br><br>
+            .zoom-on-hover:hover &#123;<br>
+            &nbsp;&nbsp;transform: scale(1.1);<br>
+            &#125;
+        </div>
+        <div class="example-zoom-on-hover"> Hover </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Картинка с описания </div>
+        <div class="code">
+            .image-container &#123;<br>
+
+            &nbsp;&nbsp;align-items: center;<br>
+            &nbsp;&nbsp;border: 1px solid #023251;<br>
+            &nbsp;&nbsp;background-color: #69b2e2;<br>
+            &nbsp;&nbsp;margin: 10px;<br>
+            &#125;<br><br>
+            .image &#123;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;height: auto;<br>
+            &#125;<br><br>
+            .image-description &#123;<br>
+            &nbsp;&nbsp;padding: 10px;<br>
+            &nbsp;&nbsp;text-align: center;<br>
+            &nbsp;&nbsp;color: #023251;<br>
+            &#125;
+        </div>
+        <div class="example-image-container">
+            <img src="image-0.jpeg" alt="Example Image" class="image">
+            <div class="image-description"> Описание на изображението </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Списък с икони </div>
+        <div class="code">
+            .icon-list &#123;<br>
+            &nbsp;&nbsp;list-style: none;<br>
+            &#125;<br><br>
+            .icon-list li &#123;<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            &nbsp;&nbsp;padding: 5px;<br>
+            &#125;<br><br>
+            .icon &#123;<br>
+            &nbsp;&nbsp;font-size: 1.5em;<br>
+            &nbsp;&nbsp;color: #4CAF50;<br>
+            &nbsp;&nbsp;margin-right: 10px;<br>
+            &#125;<br><br>
+            .text &#123;<br>
+            &nbsp;&nbsp;font-size: 1.5em;<br>
+            &nbsp;&nbsp;color: #023251;<br>
+            &#125;
+        </div>
+        <ul class="icon-list">
+            <li><span class="icon">⭐</span><span class="text"> Икона 1 </span></li>
+            <li><span class="icon">🌟</span><span class="text"> Икона 2 </span></li>
+            <li><span class="icon">💡</span><span class="text"> Икона 3 </span></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="title"> Галерия от изображения </div>
+        <div class="code">
+            .gallery-container &#123;<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+            &nbsp;&nbsp;gap: 10px;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &#125;<br><br>
+            .gallery-image &#123;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;border-radius: 10px;<br>
+            &nbsp;&nbsp;transition: transform 0.3s;<br>
+            &#125;<br><br>
+            .gallery-image:hover &#123;<br>
+            &nbsp;&nbsp;transform: scale(1.05);<br>
+            &#125;<br>
+        </div>
+        <div class="gallery-container">
+            <div>
+                <img src="image-1.jpeg" alt="Image 1" class="gallery-image">
+                <div class="caption"><span class="caption"> Описание на изображение 1 </span></div>
+            </div>
+            <div>
+                <img src="image-2.jpeg" alt="Image 2" class="gallery-image">
+                <div class="caption"><span class="caption"></span> Описание на изображение 2 </span></div>
+            </div>
+            <div>
+                <img src="image-3.jpeg" alt="Image 3" class="gallery-image">
+                <div class="caption"><span class="caption"></span> Описание на изображение 3 </span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title"> Анимиран градиентен фон </div>
+        <div class="code">
+            .animated-gradient &#123;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;height: 100px;<br>
+            &nbsp;&nbsp;background: linear-gradient(45deg, #0a036a, #5c34d4, #1e8beb);<br>
+            &nbsp;&nbsp;background-size: 300% 300%;<br>
+            &nbsp;&nbsp;animation: gradientAnimation 3s ease infinite;<br>
+            &#125;
+        </div>
+        <div class="example-animated-gradient"></div>
+    </div> 
+    </main>
+
+    <footer> 
+        <h2> Emil Stefanov, XIIv, №8 </h2>
+    </footer>
+    
+</body>
+</html>
