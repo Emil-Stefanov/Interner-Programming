@@ -50,7 +50,7 @@ body {
     flex-direction: column; 
 }
 
-.button-group a {
+.button-group a, .button-group button {
     padding: 10px; 
     margin: 5px 0; 
     background-color: #46b929; 
@@ -58,6 +58,9 @@ body {
     text-decoration: none; 
     border-radius: 5px; 
     transition: background-color 0.3s ease;
+    border: none;
+    text-align: center;
+    font-size: medium;
 }
 
 .button-group a:hover {
