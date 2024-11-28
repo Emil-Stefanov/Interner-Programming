@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Examples </title>
+
+    <script src="script.js"> </script>
+    <script>
+        function changeTextIN() {
+            const change  = 
+                document.getElementById("content-in");
+            change.innerHTML = "Променен текст - вътрешен скрипт";
+        }
+        window.alert("Съобщение от JS!");
+    </script>
+
+</head>
+<body>
+    <p id="content-in"> Първоначален текст от вътрешен скрипт. </p>
+    <button onclick="changeTextIN()"> Натисни ме! - вътрешен скрипт </button>
+
+    <p id="content-out"> Първоначален текст от външен скрипт. </p>
+    <button onclick="changeTextOUT()"> Натисни ме! - външен скрипт </button>
+</body>
+</html>
