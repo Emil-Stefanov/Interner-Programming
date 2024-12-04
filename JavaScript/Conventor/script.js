@@ -21,8 +21,7 @@ function convert() {
     const result = (value * units[fromUnit]) / units[toUnit];
 
     document.getElementById('result').innerText = `Резултат: ${result.toFixed(6)} ${toUnit}`;
-    document.getElementById('formula').innerText = 
-        `${value} ${fromUnit} = ${result.toFixed(6)} ${toUnit}`;
+    document.getElementById('formula').innerText = `${value} ${fromUnit} = ${result.toFixed(6)} ${toUnit}`;
 }
 
 document.getElementById('btn-convert').addEventListener('click', convert);
