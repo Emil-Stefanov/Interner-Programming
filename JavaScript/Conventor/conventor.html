@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="conventor">
+        <h1> Конвентор на мерни единици </h1>
+        <input type="text" id="value" placeholder="Въведете стойнст">
+        <div class="from">
+            <label> от: </label>
+            <select id="Unit-From">
+                <option value="cm"> cm </option>
+                <option value="m"> m </option>
+                <option value="km"> km </option>
+                <option value="inch"> inch </option>
+                <option value="feet"> feet </option>
+                <option value="yard"> yard </option>
+                <option value="miles"> miles </option>
+            </select>
+        </div>
+
+        <div class="to">
+            <label> в: </label>
+            <select id="Unit-To">
+                <option value="cm"> cm </option>
+                <option value="m"> m </option>
+                <option value="km"> km </option>
+                <option value="inch"> inch </option>
+                <option value="feet"> feet </option>
+                <option value="yard"> yard </option>
+                <option value="miles"> miles </option>
+            </select>
+        </div>
+
+        <p id="formula"> </p>
+        <button id="btn-convert"> Изчисли </button>
+        <p id="result" class="result"> </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
