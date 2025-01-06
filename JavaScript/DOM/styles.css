@@ -1,0 +1,33 @@
+body {
+    background-color: azure;
+    align-items: center;
+}
+
+button {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 30px;
+    border-radius: 30px;
+    border: 2px solid #67e40e;
+    background-color: #c2ff96;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #ddffc5;
+}
+
+p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+}
